@@ -37,7 +37,7 @@ echo -e ">]"
 echo -e "Update System  [ \033[32m OK \033[0m]"
 
 #Upgrade apt
-echo "-------------------------------"
+echo "--------------------------------"
 echo "apt upgrade"                                                                     
 apt -y upgrade
 apt -y dist-upgrade
@@ -54,7 +54,7 @@ echo -e "Upgrade System [ \033[32m OK \033[0m]"
 apt -y autoremove --purge && apt autoclean
 
 #Upgrade flatpack                                                                       
-echo "-------------------------------"
+echo "--------------------------------"
 echo "flatpack"
 flatpak update -y
 
@@ -69,7 +69,7 @@ done
 echo -e ">]"
 echo -e "Udpate System [ \033[32m OK \033[0m]"
 
-echo "-------------------------------"
+echo "--------------------------------"
 echo "flatpak uninstall --unused"
 flatpak uninstall --unused
 
