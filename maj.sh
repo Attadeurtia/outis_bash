@@ -24,7 +24,6 @@ echo -e "Update System  [ \033[32m OK \033[0m]"
 #Upgrade apt
 echo "--------------------------------"
 echo "apt upgrade"
-apt upgrade -y
 apt dist-upgrade -y
 echo -e "Upgrade System [ \033[32m OK \033[0m]"
 
