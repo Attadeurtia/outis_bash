@@ -24,14 +24,14 @@ echo -e "Update System  [ \033[32m OK \033[0m]"
 #Upgrade apt
 echo "--------------------------------"
 echo "apt upgrade"
-apt -y upgrade
-apt -y dist-upgrade
+apt upgrade -y
+apt dist-upgrade -y
 echo -e "Upgrade System [ \033[32m OK \033[0m]"
 
 #Clean apt
 echo "--------------------------------"
 echo "apt autoremove --purge && apt autoclean"
-apt -y autoremove --purge
+apt autoremove --purge -y
 apt autoclean
 echo -e "Clean System [ \033[32m OK \033[0m]"
 
@@ -48,7 +48,7 @@ if [ $? -eq 0 ]; then
 
   echo "--------------------------------"
   echo "flatpak uninstall --unused"
-  flatpak uninstall --unused
+  flatpak uninstall --unused -y
   echo -e "clean System [ \033[32m OK \033[0m]"
 
 else
